@@ -26,3 +26,39 @@ button {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
 }
+/* Button Hover Effect and Enhanced Image Styling */
+button:hover {
+    background-color: #ff7043; /* Coral */
+    transform: scale(1.05);
+}
+
+#breedSelector {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #8d6e63; /* Warm brown */
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#loading {
+    color: #888;
+    font-style: italic;
+}
+
+#catInfo {
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px dashed #8d6e63; /* Warm brown */
+    border-radius: 10px;
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+}
+
+#catInfo img {
+    max-width: 300px;
+    margin: 10px auto;
+    display: block;
+    border: 3px solid #c2185b; /* Deep pink */
+    border-radius: 8px;
+}
