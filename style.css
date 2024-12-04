@@ -62,3 +62,43 @@ button:hover {
     border: 3px solid #c2185b; /* Deep pink */
     border-radius: 8px;
 }
+/* Gallery and Footer Design with Gradient and Hover Effects */
+#catInfo p {
+    font-size: 18px;
+    color: #3e2723; /* Dark brown */
+    margin-top: 10px;
+}
+
+#imageGallery {
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #ffb74d; /* Warm amber */
+    border-radius: 10px;
+    background-color: #fff8e1; /* Soft light yellow */
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#imageGallery img {
+    max-width: 150px;
+    height: auto;
+    border: 2px solid #c2185b; /* Deep pink */
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#imageGallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: linear-gradient(to right, #ffb74d, #c2185b); /* Gradient with warm amber and deep pink */
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+}
