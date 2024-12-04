@@ -18,3 +18,18 @@ fetch(`https://api.thecatapi.com/v1/breeds?api_key=${API_KEY}`)
         });
     })
     .catch(error => console.error('Error fetching breeds:', error));
+
+// Add event listener for fetching cat information
+getCatButton.addEventListener('click', () => {
+    const breedId = breedSelector.value;
+    if (!breedId) {
+        alert('Please select a breed!');
+        return;
+    }
+
+    loadingDiv.style.display = 'block';
+    catInfoDiv.innerHTML = '';
+
+    // Placeholder for fetching cat information
+    console.log(`Fetching data for breed ID: ${breedId}`);
+});
