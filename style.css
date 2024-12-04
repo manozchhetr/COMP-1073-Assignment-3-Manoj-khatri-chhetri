@@ -1,0 +1,28 @@
+/* Initial Styling with Soft Light Yellow and Warm Brown Theme */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fff8e1; /* Soft light yellow */
+    padding: 20px;
+    border: 5px solid #8d6e63; /* Warm brown */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #3e2723; /* Dark brown */
+    border-bottom: 3px solid #ffb74d; /* Warm amber */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffb74d; /* Warm amber */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
