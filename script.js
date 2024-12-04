@@ -30,6 +30,24 @@ getCatButton.addEventListener('click', () => {
     loadingDiv.style.display = 'block';
     catInfoDiv.innerHTML = '';
 
-    // Placeholder for fetching cat information
-    console.log(`Fetching data for breed ID: ${breedId}`);
+    // Fetch and display cat information
+    fetch(`https://api.thecatapi.com/v1/images/search?breed_ids=${breedId}&limit=1&api_key=${API_KEY}`)
+        .then(response => response.json())
+        .then(images => {
+            images.forEach(image => {
+                catInfoDiv.innerHTML = `
+                    <img src="${image.url}" alt="Cat Image">
+                    <p><strong>Breed:</strong> ${image.breeds[0].name}</p>
+                    <p><strong>Temperament:</strong> ${image.breeds[0].temperament}</p>
+                    <p><strong>Description:</strong> ${image.breeds[0].description}</p>
+                `;
+            });
+        })
+        .catch(error => {
+            catInfoDiv.innerHTML = 'Error fetching cat info.';
+            console.error(error);
+        })
+        .finally(() => {
+            loadingDiv.style.display = 'none';
+        });
 });
